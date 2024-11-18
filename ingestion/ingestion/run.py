@@ -1,5 +1,6 @@
 import requests, os
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 
@@ -14,4 +15,9 @@ headers = {
 
 response = requests.get(url, headers=headers, params=querystring)
 
-print(response.json())
+# ensure the folder /storage exists
+os.makedirs('../../storage', exist_ok=True)
+with open('../../storage/file.json', 'w') as f:
+    json.dump(response.json()['result'], f, indent=2)
+    
+f.close()

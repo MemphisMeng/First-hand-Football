@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ingestion"
 version = "0.1.0"
-description = "hands-on big data project"
+description = "hands-on big data project: ingestion layer"
 authors = ["Anzhe Meng <anzhemeng@gmail.com>"]
 readme = "README.md"
 
