@@ -1,5 +1,5 @@
 from confluent_kafka import Producer
-from ingestion import ingestor
+from collection import collector
 import json, time
 
 def publish_to_kafka(topic, data):
