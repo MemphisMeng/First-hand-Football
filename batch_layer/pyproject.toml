@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "batch-layer"
+version = "0.1.0"
+description = ""
+authors = ["Anzhe Meng <meng@prepbaseballreport.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+confluent-kafka = "^2.6.1"
+hdfs = "^2.7.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

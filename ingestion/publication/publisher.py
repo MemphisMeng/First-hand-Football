@@ -20,7 +20,7 @@ if __name__ == '__main__':
     TOPIC = "live-games"
     while True:
         # Step 1: Retrieve data from API
-        data = ingestor.fetch()
+        data = collector.fetch()
         
         # Step 2: Publish data to Kafka
         if data:
