@@ -41,7 +41,7 @@ try:
             if len(batch) >= batch_size:
                 hdfs_file.write('\n'.join(batch) + '\n')
                 batch = []
-                print(f"Written to HDFS: {msg.value().decode('utf-8')}")
+                print(f"Written to HDFS!")
 
 except KeyboardInterrupt:
     print("\nStopping consumer...")
